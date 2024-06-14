@@ -1,1 +1,1 @@
-This repository contains code files for of higher level languages projects starting with python
+This repository contains code files of higher level languages projects starting with python.

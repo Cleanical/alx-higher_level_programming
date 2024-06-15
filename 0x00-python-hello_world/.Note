@@ -1,0 +1,17 @@
+For the current code for 1-run_inline:
+#!/bin/bash
+echo $PYCODE | python3
+
+meaning that the content of PYCODE should be echoed or written out and run with(|) python3. And we have already exported PYCODE as such: 
+export PYCODE='print(f"Best School: {88+10}")'
+
+meaning the content of PYCODE is now equated to that 'prin...
+ANOTHER METHOD is to create a folder to export PYCODE to. Example can be testmain. May or not have .py extension. cat testmain:
+#!/bin/usr/python3
+print(f"Best School: {88+10}")
+
+then have the excutable file, test. It contains the shell script to run python code. Cat test:
+#!/bin/bash
+python3 $PYCODE
+
+$PYCODE is known as the environment variable in which the python code is saved.
